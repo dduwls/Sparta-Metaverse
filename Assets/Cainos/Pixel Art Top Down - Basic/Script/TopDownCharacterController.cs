@@ -7,6 +7,7 @@ namespace Cainos.PixelArtTopDown_Basic
     public class TopDownCharacterController : MonoBehaviour
     {
         public float speed;
+        public bool canMove = true;
 
         private Animator animator;
         private Rigidbody2D rb;
@@ -21,6 +22,13 @@ namespace Cainos.PixelArtTopDown_Basic
         private void Update()
         {
             Vector2 dir = Vector2.zero;
+
+            if (!canMove)
+            {
+                rb.velocity = Vector2.zero;
+                return;
+            }
+
             if (Input.GetKey(KeyCode.A))
             {
                 dir.x = -1;

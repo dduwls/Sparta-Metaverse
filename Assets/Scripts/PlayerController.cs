@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class PlayerController : BaseController
 {
-    private Camera camera;
+    private Camera cam;
     private Animator animator;
     private Vector2 defaultLookDirection = Vector2.left; // 기본 왼쪽 방향 (-1, 0)
 
     protected override void Start()
     {
         base.Start();
-        camera = Camera.main;
+        cam = Camera.main;
         animator = GetComponent<Animator>();
         lookDirection = defaultLookDirection; // 시작할 때 기본 방향 설정
     }
