@@ -5813,6 +5813,7 @@ GameObject:
   - component: {fileID: 331452559}
   - component: {fileID: 331452558}
   - component: {fileID: 331452561}
+  - component: {fileID: 331452562}
   m_Layer: 20
   m_Name: Meow
   m_TagString: Untagged
@@ -5983,6 +5984,18 @@ MonoBehaviour:
   player: {fileID: 387331089}
   followSpeed: 2
   offset: {x: 0.7, y: 0.25, z: 0}
+--- !u!114 &331452562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331452554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad3070b38b5b0c4985c239438403b36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &371555631
 GameObject:
   m_ObjectHideFlags: 0
