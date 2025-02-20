@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     private UIManager uIManager;
     public UIManager UIManager => uIManager;
 
+    public ScoreManager scoreManager;
+
     private int currentScore = 0;
 
     private void Awake()
@@ -26,6 +28,9 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        scoreManager.NowScore = uIManager.Score;
+
+        scoreManager.GameOver();
         uIManager.SetRestart();
     }
 

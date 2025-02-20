@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MiniGame : MonoBehaviour
 {
+
+    
     private bool isMiniGameActive = false;
 
     public void StartMiniGame()

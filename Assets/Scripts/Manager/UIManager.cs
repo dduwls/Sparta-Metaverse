@@ -12,6 +12,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI restartText;
     private PlayerController playerController; // 플레이어 조작 스크립트
 
+    public int Score { get; set; }
+
     private void Start()
     {
         // 플레이어 조작 비활성화
@@ -61,6 +63,7 @@ public class UIManager : MonoBehaviour
 
     public void UpdateScore(int score)
     {
+        Score = score;
         scoreText.text = score.ToString();
     }
 }

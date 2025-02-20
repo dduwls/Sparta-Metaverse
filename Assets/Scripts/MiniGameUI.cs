@@ -11,6 +11,9 @@ public class MiniGameUI : MonoBehaviour
     public Button closeButton; // 미니게임 시작 버튼
     public string sceneName;
     public GameObject player;
+    string key = "bestScore";
+
+    public Text nowScore;
 
     public void StartMiniGame()
     {
@@ -32,5 +35,6 @@ public class MiniGameUI : MonoBehaviour
         if (startButton != null) startButton.onClick.AddListener(StartMiniGame);
         if (closeButton != null) closeButton.onClick.AddListener(ClosePopup);
     }
+    
 }
 
